@@ -30,6 +30,10 @@ body {
   padding: 2rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .background-card-img {
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -53,12 +57,9 @@ body {
   border-radius: 12px;
 }
 
-.container > div {
-  padding: 3rem 2.5rem;
-}
 
 .container .content {
-  margin-bottom: 2rem;
+  padding: 3rem 2.5rem;
 }
 
 
@@ -66,48 +67,109 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.user-profile {
+.card-footer {
+  height: 100px;
+}
+
+.card-footer .shared {
+  display: none;
+  visibility: hidden;
+}
+
+.card-footer .user {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 3rem 2.5rem;
+  height: 100%;
 }
 
-.user-profile img {
+.card-footer .user img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 1rem
 }
 
-.user-profile div {
+.card-footer .user div {
   display: flex;
   flex-direction: column;
 }
 
-.user-profile div strong {
+.card-footer .user div strong {
   font-weight: 700;
   color: var(--clr-dark-blue);
 }
 
-.user-profile div p {
+.card-footer .user div p {
   color: var(--clr-grayish-blue);
 }
 
-.user-profile button img {
-  width: 20px;
-  height: 20px;
+.card-footer .user button img {
+  width: 15px;
+  height: 13px;
   margin: 0;
 }
 
-.user-profile button {
+.card-footer .user .share-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   border-radius: 50%;
   border: none;
   background: var(--clr-background-primary);
   margin-left: auto;
+  outline-color: var(--clr-desatured-blue) ;
+}
+
+.card-footer.share .shared {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  visibility: visible;
+  padding: 2rem 3rem 2.5rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-footer.share .user {
+  display: none;
+  visibility: hidden;
+}
+
+.card-footer.share .shared {
+  background: var(--clr-dark-blue);
+  padding: 2rem 3rem 2.5rem;
+}
+
+.card-footer.share .shared div {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer.share .shared div > * + * {
+  margin-left: 1rem;
+}
+
+.card-footer.share .shared span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--clr-grayish-blue);
+}
+
+.card-footer.share .shared .share-button {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  background: var(--clr-background-primary);
+  outline-color: var(--clr-desatured-blue) ;
 }
