@@ -19,7 +19,7 @@ Webpage feita utilizando html, css. Tem como objetivo praticar sobre responsivid
 - CSS(flexbox)
 
 ## 👇 Clonar o Projeto
-Abra um terminal e execute essas linhas:
+Abra o terminal e execute essas linhas:
 
 ```bash
   ## clonar repositório
