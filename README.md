@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://im7.ezgif.com/tmp/ezgif-7-86521678d150.gif" alt="article preview component gif" />
+  <img src="./ezgif.com-gif-maker.gif" alt="article preview component gif"/>
 </p>
 
 # Sumário
